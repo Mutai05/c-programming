@@ -19,7 +19,7 @@ int main()
 
     printf("Hello %s\n", name);
     printf("You are %d years old\n", age);
-    printf("Your avaerage grade is %c\n", grade);
+    printf("Your average grade is %c\n", grade);
     printf("Your gpa is %f\n", gpa);
 
     return 0;
