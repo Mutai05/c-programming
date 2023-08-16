@@ -23,6 +23,14 @@ int main()
 
     // Take note integer division
 
+    /*  augmented assignment operators = used to replace a statement where an operator takes
+                                        a variable as one of its arguments and then assigns
+                                        the result back to the same variable
+                                        x = x + 1
+                                        x+=1
+
+    */
+
     int x = 5;
     int y = 2;
 
