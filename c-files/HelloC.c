@@ -1,23 +1,23 @@
 #include <stdio.h>
 
-// Using 'printf' Function
+/* Using 'printf' Function */
 
-void printfFunction()
+void printfFunction(void)
 {
     int age = 27;
     printf("My age is %d years old.\n", age);
 }
 
-// Using 'puts' Function. SImpler alternative to printf
+/* Using 'puts' Function. SImpler alternative to printf */
 
-void putsFunction()
+void putsFunction(void)
 {
     puts("Hello, Wold!\n");
 }
 
-// Using 'putchar' Function
+/* Using 'putchar' Function */
 
-void putcharFunction()
+void putcharFunction(void)
 {
     putchar('M');
     putchar('u');
@@ -34,16 +34,9 @@ void putcharFunction()
     putchar('\n');
 }
 
-// Function to print a greeting
+/* Function to get input from user and print it */
 
-void printGreeting()
-{
-    printf("Hello, World!\n");
-}
-
-// Function to get input from user and print it
-
-void getInputAndPrint()
+void getInputAndPrint(void)
 {
     int num;
     printf("Enter a Number: ");
@@ -51,9 +44,9 @@ void getInputAndPrint()
     printf("You entered: %d\n", num);
 }
 
-// The sizeof Operator in C
+/* The sizeof Operator in C */
 
-int sizeofOperator()
+int sizeofOperator(void)
 {
     int intSize = sizeof(int);
     printf("Size of int: %d bytes\n", intSize);
@@ -65,13 +58,12 @@ int sizeofOperator()
     printf("Size of char: %zu byte\n", charSize);
 }
 
-int main()
+int main(void)
 {
     printfFunction();
     putsFunction();
     putcharFunction();
-    printGreeting();
     getInputAndPrint();
     sizeofOperator();
-    return 0;
+    return (0);
 }
