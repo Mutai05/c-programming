@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int arithmeticOperators(void)
 {
 
     // arithmetic operators
@@ -37,8 +37,34 @@ int main()
     float z = x / (float)2;
     int sum = x + y;
 
-    printf("%f\n", z);
+    printf("%.1f\n", z);
     printf("Sum is equal to: %d\n", sum);
 
     return 0;
+}
+
+/*  Set Decimal Precision */
+
+int decimalPrecision(void)
+{
+    float myFloatNum = 3.5;
+
+    /* Default will show 6 digits after the decimal point */
+    printf("%f\n", myFloatNum);
+
+    /* Only show 1 digit */
+    printf("%.1f\n", myFloatNum);
+
+    /* Only show 2 digits */
+    printf("%.2f\n", myFloatNum);
+
+    /* Only show 4 digits */
+    printf("%.4f\n", myFloatNum);
+}
+
+int main(void)
+{
+    arithmeticOperators();
+    decimalPrecision();
+    return (0);
 }
