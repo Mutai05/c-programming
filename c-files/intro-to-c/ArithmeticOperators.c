@@ -34,7 +34,7 @@ int arithmeticOperators(void)
     int x = 5;
     int y = 2;
 
-    float z = x / (float)2;
+    float z = (float)x / y;
     int sum = x + y;
 
     printf("%.1f\n", z);
