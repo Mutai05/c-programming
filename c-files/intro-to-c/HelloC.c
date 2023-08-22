@@ -39,7 +39,7 @@ void putcharFunction(void)
 void getInputAndPrint(void)
 {
     int num;
-    printf("Enter a Number: ");
+    printf("Enter a Number: \n");
     scanf("%d", &num);
     printf("You entered: %d\n", num);
 }
@@ -58,6 +58,19 @@ int sizeofOperator(void)
     printf("Size of char: %zu byte\n", charSize);
 }
 
+/* Assign value to another variable */
+
+int assignValue(void)
+{
+
+    int myNum = 15;
+    int myOtherNum = 23;
+
+    myNum = myOtherNum;
+
+    printf("My new number is: %d\n", myNum);
+}
+
 int main(void)
 {
     printfFunction();
@@ -65,5 +78,6 @@ int main(void)
     putcharFunction();
     getInputAndPrint();
     sizeofOperator();
+    assignValue();
     return (0);
 }
