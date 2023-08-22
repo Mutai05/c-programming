@@ -26,7 +26,7 @@ int main()
     /*  augmented assignment operators = used to replace a statement where an operator takes
                                         a variable as one of its arguments and then assigns
                                         the result back to the same variable
-                                        x = x + 1
+                                        int sum = x + 1
                                         x+=1
 
     */
@@ -35,8 +35,10 @@ int main()
     int y = 2;
 
     float z = x / (float)2;
+    int sum = x + y;
 
-    printf("%f", z);
+    printf("%f\n", z);
+    printf("Sum is equal to: %d\n", sum);
 
     return 0;
 }

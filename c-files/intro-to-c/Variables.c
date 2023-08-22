@@ -8,6 +8,12 @@ int main()
     //              That variable now behaves as if it is the value it contains.
     //              BUT we need to declare what type of data we are storing.
 
+    // Good
+    int minutesPerHour = 60;
+
+    // OK, but not so easy to understand what m actually is
+    int m = 60;
+
     int x;       // declaration
     x = 123;     // initialization
     int y = 321; // declaration + initialization

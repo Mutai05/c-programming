@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /* Using 'printf' Function */
 
@@ -71,6 +72,54 @@ int assignValue(void)
     printf("My new number is: %d\n", myNum);
 }
 
+/* Real Life Example of Naming Variables */
+
+int namingVariables(void)
+{
+    // Student data
+    int studentID = 15;
+    int studentAge = 23;
+    float studentFee = 75.25;
+    char studentGrade = 'B';
+
+    // Print variables
+    printf("Student id: %d\n", studentID);
+    printf("Student age: %d\n", studentAge);
+    printf("Student fee: %f\n", studentFee);
+    printf("Student grade: %c\n", studentGrade);
+}
+
+/* Create a destination character array using strcpy */
+
+int stringFunctions(void)
+{
+    char source[] = "Hello!";
+    char destination[20];
+
+    /* Copy source to destination */
+    strcpy(destination, source);
+
+    printf("Source: %s\n", source);
+    printf("Destination: %s\n", destination);
+}
+
+/* Create a destination character array using strcpy */
+
+int stringLength(void)
+{
+    /* Declare a character array with a size of 20 */
+
+    char destination[20];
+
+    /* Assign a string to the destination */
+
+    strcpy(destination, "Hello, World!");
+
+    /* Print the string in destination */
+
+    printf("Destination is: %s\n", destination);
+}
+
 int main(void)
 {
     printfFunction();
@@ -79,5 +128,8 @@ int main(void)
     getInputAndPrint();
     sizeofOperator();
     assignValue();
+    namingVariables();
+    stringFunctions();
+    stringLength();
     return (0);
 }
