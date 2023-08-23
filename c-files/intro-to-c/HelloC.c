@@ -59,6 +59,21 @@ int sizeofOperator(void)
     printf("Size of char: %zu byte\n", charSize);
 }
 
+/* The sizeof Operator in C using lu */
+
+int sizeofOperatorlu(void)
+{
+    int myInt;
+    float myFloat;
+    double myDouble;
+    char myChar;
+
+    printf("%lu\n", sizeof(myInt));
+    printf("%lu\n", sizeof(myFloat));
+    printf("%lu\n", sizeof(myDouble));
+    printf("%lu\n", sizeof(myChar));
+}
+
 /* Assign value to another variable */
 
 int assignValue(void)
@@ -85,7 +100,7 @@ int namingVariables(void)
     // Print variables
     printf("Student id: %d\n", studentID);
     printf("Student age: %d\n", studentAge);
-    printf("Student fee: %f\n", studentFee);
+    printf("Student fee: %.2f\n", studentFee);
     printf("Student grade: %c\n", studentGrade);
 }
 
@@ -127,6 +142,7 @@ int main(void)
     putcharFunction();
     getInputAndPrint();
     sizeofOperator();
+    sizeofOperatorlu();
     assignValue();
     namingVariables();
     stringFunctions();

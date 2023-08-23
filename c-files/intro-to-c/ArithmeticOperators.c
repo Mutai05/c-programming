@@ -34,10 +34,10 @@ int arithmeticOperators(void)
     int x = 5;
     int y = 2;
 
-    float z = (float)x / y;
+    float answer = (float)x / y;
     int sum = x + y;
 
-    printf("%.1f\n", z);
+    printf("%.1f\n", answer);
     printf("Sum is equal to: %d\n", sum);
 
     return 0;
