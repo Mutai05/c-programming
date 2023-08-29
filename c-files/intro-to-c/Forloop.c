@@ -11,13 +11,24 @@ int forLoop(void)
 
     for (i = 1; i < 10; i++)
     {
-        printf("%d\n", i);
+        printf("%d\n\n", i);
+    }
+}
+
+int evenValues(void)
+{
+    int x;
+
+    for (x = 0; x <= 10; x = x + 2)
+    {
+        printf("%d\n", x);
     }
 }
 
 int main(void)
 {
     forLoop();
+    evenValues();
 
     return (0);
 }
