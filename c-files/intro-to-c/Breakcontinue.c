@@ -2,7 +2,21 @@
 
 #include <stdio.h>
 
-int main()
+int breakContinue()
+{
+    int i;
+
+    for (i = 0; i < 10; i++)
+    {
+        if (i == 4)
+        {
+            break;
+        }
+        printf("%d\n\n", i);
+    }
+}
+
+int breakCont()
 {
     int i = 0;
 
@@ -16,6 +30,12 @@ int main()
         printf("%d\n", i);
         i++;
     }
+}
 
-    return 0;
+int main()
+{
+    breakContinue();
+    breakCont();
+
+    return (0);
 }
