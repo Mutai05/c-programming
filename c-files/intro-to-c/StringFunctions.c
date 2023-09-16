@@ -28,6 +28,12 @@ int sizeOf(void)
     return 0;
 }
 
+/*
+ * concatenateStrings - To concatenate (combine) two strings,
+ *
+ * you can use the strcat() function:
+ */
+
 int concatenateStrings(void)
 {
     char str1[20] = "Hello ";
@@ -43,6 +49,25 @@ int concatenateStrings(void)
 }
 
 /*
+ * copyStrings - To copy the value of one string to another,
+ * you can use the strcpy() function:
+ */
+
+int copyStrings(void)
+{
+    char str1[20] = "Hello C World!";
+    char str2[20];
+
+    /* Copy str1 to str2 */
+    strcpy(str2, str1);
+
+    /* Print str2 */
+    printf("%s\n", str2);
+
+    return 0;
+}
+
+/*
  * main - the main function of the program
  */
 
@@ -51,6 +76,7 @@ int main(void)
     stringFunctions();
     sizeOf();
     concatenateStrings();
+    copyStrings();
 
     return (0);
 }
