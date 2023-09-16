@@ -53,12 +53,42 @@ int loopString()
     }
 }
 
+/*
+ * Special characters in C
+ *
+ * The backslash (\) escape character turns
+ * special characters into string characters:
+ */
+
+int specialCharacters()
+{
+    char txt[] = "We are the so-called \"Vikings\" from the north.\n";
+    printf("%s", txt);
+}
+
+int singleQuote()
+{
+    char txt[] = "It\'s alright.";
+    printf("%s\n", txt);
+
+    return 0;
+}
+
+int backSlash()
+{
+    char txt[] = "The character \\ is called backslash.";
+    printf("%s\n", txt);
+}
+
 int main()
 {
     cStrings();
     accessStrings();
     modifyStrings();
     loopString();
+    specialCharacters();
+    singleQuote();
+    backSlash();
 
     return (0);
 }
