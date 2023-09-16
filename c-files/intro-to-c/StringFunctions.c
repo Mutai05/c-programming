@@ -67,6 +67,21 @@ int copyStrings(void)
     return 0;
 }
 
+int comapreStrings()
+{
+    char str1[] = "Hello";
+    char str2[] = "Hello";
+    char str3[] = "Hi";
+
+    /* Compare str1 and str2, and print the result */
+    printf("%d\n", strcmp(str1, str2));
+
+    /* Compare str1 and str3, and print the result */
+    printf("%d\n", strcmp(str1, str3));
+
+    return 0;
+}
+
 /*
  * main - the main function of the program
  */
@@ -77,6 +92,7 @@ int main(void)
     sizeOf();
     concatenateStrings();
     copyStrings();
+    comapreStrings();
 
     return (0);
 }
