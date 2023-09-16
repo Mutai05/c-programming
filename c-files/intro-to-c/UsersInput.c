@@ -23,10 +23,21 @@ int multipleInputs()
     printf("Your char is: %c\n", myChar);
 }
 
+int stringInputs()
+{
+    char firstName[30];
+
+    printf("Enter your first name: \n");
+    scanf("%s", firstName);
+
+    printf("Hello %s\n", firstName);
+}
+
 int main()
 {
     userInput();
     multipleInputs();
+    stringInputs();
 
     return (0);
 }
