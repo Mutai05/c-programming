@@ -95,9 +95,51 @@ int accessElements()
     printf("%d\n", *(myNumbers + 1));
 
     /* Get the value of the third element in myNumbers */
-    printf("%d\n", *(myNumbers + 2));
+    printf("%d\n\n", *(myNumbers + 2));
 
     return 0;
+}
+
+/*
+ * Or loop through it:
+ */
+
+int loopAccess()
+{
+    int myNumbers[4] = {25, 50, 75, 100};
+    int *ptr = myNumbers;
+    int i;
+
+    for (i = 0; i < 4; i++)
+    {
+        printf("%d\n\n", *(ptr + i));
+    }
+
+    return (0);
+}
+
+/*
+ * It is also possible to change the
+ * value of array elements with pointers:
+ */
+
+int changeValues()
+{
+    int myNumbers[4] = {25, 50, 75, 100};
+
+    /* Change the value of the first element to 15 */
+    *myNumbers = 15;
+
+    /* Change the value of the second element to 45 */
+    *(myNumbers + 1) = 45;
+
+    /* Get the value of the first element */
+    printf("%d\n", *myNumbers);
+
+    /* Get the value of the second element */
+    printf("%d\n", *(myNumbers + 1));
+
+    return (0);
 }
 
 int main()
@@ -108,6 +150,8 @@ int main()
     pointersArrays();
     firstElement();
     accessElements();
+    loopAccess();
+    changeValues();
 
     return (0);
 }
