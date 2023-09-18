@@ -21,19 +21,22 @@ int fileHandling(void)
     /* Open file for reading */
     fptr = fopen("fileone.txt", "r");
 
-    if (fptr == NULL)
-    {
-        printf("Error opening the file.\n");
-        return 1; /* Return an error code to indicate failure */
-    }
-
     /* Store the content of the file */
     char myString[100];
 
     /* Read the content and store it inside myString */
-    while (fgets(myString, 100, fptr))
+
+    if (fptr != NULL)
     {
-        printf("%s", myString);
+        while (fgets(myString, 100, fptr))
+        {
+            printf("%s", myString);
+        }
+    }
+    else
+    {
+        printf("Not able to open the file.\n");
+        return 1; /* Return an error code to indicate failure */
     }
 
     /* Print file content */
