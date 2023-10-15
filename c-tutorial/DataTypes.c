@@ -10,7 +10,7 @@ int main()
     char phrase[] = "Hello World!";
 
     printf("Print Age: %d\n", age);
-    printf("Print GPA: %lf\n", gpa);
+    printf("Print GPA: %.1lf\n", gpa);
     printf("Print Grade: %c\n", grade);
     printf("Print Phrase: %s\n", phrase);
 
