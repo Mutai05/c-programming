@@ -16,7 +16,7 @@ int userAge()
 int userName()
 {
     char name[20];
-    printf("Enter your Name: \n");
+    printf("Enter your First Name: \n");
     fgets(name, sizeof(name), stdin);
 
     printf("Your name is %s.\n", name);
