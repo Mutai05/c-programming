@@ -6,17 +6,18 @@ int userAge()
     int age;
     printf("Enter your Age: \n");
     scanf("%d", &age);
+    getchar();
 
     printf("Your are %d years old.\n", age);
 
-    return (0);
+    return age;
 }
 
 int userName()
 {
     char name[20];
     printf("Enter your Name: \n");
-    scanf("%s", name);
+    fgets(name, sizeof(name), stdin);
 
     printf("Your name is %s.\n", name);
 
