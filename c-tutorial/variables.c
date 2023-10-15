@@ -3,9 +3,13 @@
 
 int main()
 {
-    printf("There was once a man named John\n");
-    printf("He was 35 years old\n");
-    printf("He really liked the name John\n");
-    printf("But did not like being 35.\n");
+
+    char charactersName[] = "Kelvin";
+    int charactersAge = 25;
+
+    printf("There was once a man named %s\n", charactersName);
+    printf("He was %d years old\n", charactersAge);
+    printf("He really liked the name %s\n", charactersName);
+    printf("But did not like being %d.\n", charactersAge);
     return (0);
 }
