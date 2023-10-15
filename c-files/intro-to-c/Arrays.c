@@ -43,7 +43,18 @@ int arraySizes()
     printf("Element 1: %d\n", myArray[1]);
     printf("Element 2: %d\n", myArray[2]);
     printf("Element 3: %d\n", myArray[3]);
-    printf("Element 4: %d\n", myArray[4]);
+    printf("Element 4: %d\n\n", myArray[4]);
+}
+
+int luckNum()
+{
+
+    int luckyNumbers[] = {4, 8, 12, 16, 20, 24};
+    luckyNumbers[1] = 200;
+
+    printf("%d\n", luckyNumbers[1]);
+
+    return (0);
 }
 
 int main()
@@ -52,6 +63,7 @@ int main()
     changeArray();
     loopArrays();
     arraySizes();
+    luckNum();
 
     return (0);
 }
