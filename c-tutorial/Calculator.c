@@ -6,9 +6,9 @@ int main()
 
     double num1;
     double num2;
-    printf("Enter first numer: ");
+    printf("Enter first number: ");
     scanf("%lf", &num1);
-    printf("Enter second numer: ");
+    printf("Enter second number: ");
     scanf("%lf", &num2);
 
     printf("Answer: %.2f\n", num1 + num2);
